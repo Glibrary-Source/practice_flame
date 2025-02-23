@@ -25,6 +25,13 @@ class SpaceShooterGame extends FlameGame {
         ..height = 100
         ..anchor = Anchor.center,
     );
+    add(
+      Player()
+        ..position = size / 2
+        ..width = 50
+        ..height = 100
+        ..anchor = Anchor.center,
+    );
   }
 }
 
