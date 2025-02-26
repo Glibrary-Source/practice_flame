@@ -20,17 +20,10 @@ class SpaceShooterGame extends FlameGame {
   Future<void> onLoad() async {
     add(
       Player()
-        ..position = size / 2
+        ..position = Vector2(0, 80)
         ..width = 50
         ..height = 100
-        ..anchor = Anchor.center,
-    );
-    add(
-      Player()
-        ..position = size / 2
-        ..width = 50
-        ..height = 100
-        ..anchor = Anchor.center,
+        ..anchor = Anchor.centerLeft,
     );
   }
 }
